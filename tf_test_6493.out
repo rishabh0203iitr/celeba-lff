@@ -1,0 +1,208 @@
+0
+SLURM_JOBID=6493
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Wed Sep  8 01:30:48 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/lff_vanilla
+working directory = /raid/ysharma_me/fair_lr/lff_vanilla
+/raid/ysharma_me/fair_lr/lff_vanilla
+iitrdgx
+Wed Sep  8 01:30:48 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+[20:00:55] [WARNING] [debias.main] No observers have been added to this run
+[20:00:55] [INFO] [debias.main] Running command 'train'
+[20:00:55] [INFO] [debias.main] Started
+CelebA
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/user/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0% 0.00/44.7M [00:00<?, ?B/s] 16% 7.13M/44.7M [00:00<00:00, 65.6MB/s] 44% 19.5M/44.7M [00:00<00:00, 77.1MB/s] 68% 30.6M/44.7M [00:00<00:00, 85.6MB/s] 84% 37.4M/44.7M [00:00<00:00, 73.7MB/s]100% 44.7M/44.7M [00:00<00:00, 92.1MB/s]
+  0% 0/127200 [00:00<?, ?it/s]/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+  0% 0/78 [00:00<?, ?it/s][A[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+
+  1% 1/78 [00:04<05:58,  4.66s/it][A
+  3% 2/78 [00:04<04:12,  3.32s/it][A
+  4% 3/78 [00:04<02:57,  2.36s/it][A
+  5% 4/78 [00:05<02:06,  1.71s/it][A
+  6% 5/78 [00:05<01:30,  1.24s/it][A
+  8% 6/78 [00:05<01:06,  1.08it/s][A
+  9% 7/78 [00:05<00:49,  1.43it/s][A
+ 10% 8/78 [00:05<00:37,  1.85it/s][A
+ 12% 9/78 [00:05<00:28,  2.39it/s][A
+ 13% 10/78 [00:06<00:25,  2.69it/s][A
+ 14% 11/78 [00:06<00:21,  3.15it/s][A
+ 15% 12/78 [00:06<00:20,  3.18it/s][A
+ 17% 13/78 [00:06<00:17,  3.62it/s][A
+ 18% 14/78 [00:07<00:16,  3.97it/s][A
+ 19% 15/78 [00:07<00:14,  4.30it/s][A
+ 21% 16/78 [00:07<00:13,  4.56it/s][A
+ 22% 17/78 [00:07<00:12,  4.81it/s][A
+ 23% 18/78 [00:07<00:12,  4.94it/s][A
+ 24% 19/78 [00:08<00:11,  4.98it/s][A
+ 26% 20/78 [00:08<00:10,  5.37it/s][A
+ 27% 21/78 [00:08<00:09,  5.88it/s][A
+ 28% 22/78 [00:08<00:08,  6.27it/s][A
+ 29% 23/78 [00:08<00:08,  6.62it/s][A
+ 31% 24/78 [00:08<00:07,  6.90it/s][A
+ 32% 25/78 [00:08<00:07,  7.07it/s][A
+ 33% 26/78 [00:09<00:07,  7.20it/s][A
+ 35% 27/78 [00:09<00:07,  7.20it/s][A
+ 37% 29/78 [00:09<00:05,  8.33it/s][A
+ 38% 30/78 [00:09<00:06,  7.55it/s][A
+ 40% 31/78 [00:09<00:05,  8.01it/s][A
+ 42% 33/78 [00:09<00:05,  7.74it/s][A
+ 45% 35/78 [00:10<00:05,  8.51it/s][A
+ 46% 36/78 [00:10<00:05,  7.51it/s][A
+ 49% 38/78 [00:10<00:04,  8.63it/s][A
+ 50% 39/78 [00:10<00:05,  7.33it/s][A
+ 51% 40/78 [00:10<00:05,  7.59it/s][A
+ 54% 42/78 [00:10<00:04,  7.63it/s][A
+ 56% 44/78 [00:11<00:04,  8.33it/s][A
+ 58% 45/78 [00:11<00:04,  7.24it/s][A
+ 60% 47/78 [00:11<00:03,  7.89it/s][A
+ 62% 48/78 [00:11<00:04,  7.12it/s][A
+ 64% 50/78 [00:11<00:03,  7.39it/s][A
+ 65% 51/78 [00:12<00:03,  7.99it/s][A
+ 68% 53/78 [00:12<00:03,  7.98it/s][A
+ 71% 55/78 [00:12<00:02,  8.00it/s][A
+ 72% 56/78 [00:12<00:02,  7.69it/s][A
+ 74% 58/78 [00:12<00:02,  8.27it/s][A
+ 76% 59/78 [00:13<00:02,  7.60it/s][A
+ 78% 61/78 [00:13<00:02,  7.74it/s][A
+ 79% 62/78 [00:13<00:02,  7.62it/s][A
+ 82% 64/78 [00:13<00:01,  7.71it/s][A
+ 85% 66/78 [00:13<00:01,  7.82it/s][A
+ 86% 67/78 [00:14<00:01,  7.40it/s][A
+ 88% 69/78 [00:14<00:01,  7.64it/s][A
+ 90% 70/78 [00:14<00:01,  7.66it/s][A
+ 91% 71/78 [00:14<00:00,  8.17it/s][A
+ 92% 72/78 [00:14<00:00,  7.49it/s][A
+ 95% 74/78 [00:14<00:00,  7.71it/s][A
+ 96% 75/78 [00:15<00:00,  7.38it/s][A
+ 99% 77/78 [00:15<00:00,  7.66it/s][A
+                                   [A
+  0% 0/78 [00:00<?, ?it/s][A[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+
+  1% 1/78 [00:02<03:14,  2.52s/it][A
+  3% 2/78 [00:02<02:16,  1.80s/it][A
+  5% 4/78 [00:02<01:36,  1.30s/it][A
+  8% 6/78 [00:03<01:08,  1.06it/s][A
+  9% 7/78 [00:03<00:50,  1.41it/s][A
+ 12% 9/78 [00:03<00:36,  1.91it/s][A
+ 13% 10/78 [00:03<00:28,  2.41it/s][A
+ 15% 12/78 [00:03<00:21,  3.13it/s][A
+ 17% 13/78 [00:04<00:17,  3.68it/s][A
+ 19% 15/78 [00:04<00:13,  4.60it/s][A
+ 21% 16/78 [00:04<00:12,  4.99it/s][A
+ 22% 17/78 [00:04<00:10,  5.74it/s][A
+ 23% 18/78 [00:04<00:09,  6.20it/s][A
+ 24% 19/78 [00:04<00:09,  6.25it/s][A
+ 27% 21/78 [00:04<00:08,  7.02it/s][A
+ 28% 22/78 [00:05<00:08,  6.79it/s][A
+ 31% 24/78 [00:05<00:06,  7.74it/s][A
+ 32% 25/78 [00:05<00:07,  7.22it/s][A
+ 35% 27/78 [00:05<00:06,  8.19it/s][A
+ 36% 28/78 [00:05<00:06,  7.58it/s][A
+ 37% 29/78 [00:05<00:06,  7.27it/s][A
+ 40% 31/78 [00:06<00:05,  7.98it/s][A
+ 41% 32/78 [00:06<00:06,  7.39it/s][A
+ 44% 34/78 [00:06<00:05,  8.37it/s][A
+ 45% 35/78 [00:06<00:06,  7.12it/s][A
+ 46% 36/78 [00:06<00:05,  7.75it/s][A
+ 49% 38/78 [00:06<00:05,  7.82it/s][A
+ 50% 39/78 [00:07<00:05,  7.69it/s][A
+ 53% 41/78 [00:07<00:04,  8.19it/s][A
+ 54% 42/78 [00:07<00:04,  7.52it/s][A
+ 56% 44/78 [00:07<00:04,  7.68it/s][A
+ 58% 45/78 [00:07<00:04,  7.54it/s][A
+ 60% 47/78 [00:08<00:04,  7.49it/s][A
+ 63% 49/78 [00:08<00:03,  8.35it/s][A
+ 64% 50/78 [00:08<00:03,  7.26it/s][A
+ 67% 52/78 [00:08<00:03,  7.79it/s][A
+ 68% 53/78 [00:08<00:03,  7.33it/s][A
+ 71% 55/78 [00:09<00:03,  7.55it/s][A
+ 72% 56/78 [00:09<00:02,  7.46it/s][A
+ 74% 58/78 [00:09<00:02,  7.55it/s][A
+ 77% 60/78 [00:09<00:02,  8.49it/s][A
+ 78% 61/78 [00:09<00:01,  8.79it/s][A
+ 79% 62/78 [00:09<00:02,  7.85it/s][A
+ 82% 64/78 [00:10<00:01,  7.82it/s][A
+ 83% 65/78 [00:10<00:01,  7.64it/s][A
+ 86% 67/78 [00:10<00:01,  7.79it/s][A
+ 87% 68/78 [00:10<00:01,  8.25it/s][A
+ 90% 70/78 [00:10<00:00,  8.22it/s][A
+ 91% 71/78 [00:11<00:00,  8.58it/s][A
+ 94% 73/78 [00:11<00:00,  8.53it/s][A
+ 95% 74/78 [00:11<00:00,  8.62it/s][A
+ 97% 76/78 [00:11<00:00,  8.37it/s][A
+100% 78/78 [00:11<00:00,  9.49it/s][A
+                                   [A  0% 1/127200 [00:31<1111:25:18, 31.46s/it]  0% 2/127200 [00:31<780:40:51, 22.10s/it]   0% 3/127200 [00:31<549:05:30, 15.54s/it]  0% 4/127200 [00:32<387:22:39, 10.96s/it]  0% 5/127200 [00:32<275:05:10,  7.79s/it]  0% 6/127200 [00:32<196:06:25,  5.55s/it]  0% 7/127200 [00:33<141:25:31,  4.00s/it]  0% 8/127200 [00:33<102:43:17,  2.91s/it]  0% 9/127200 [00:34<75:58:24,  2.15s/it]   0% 10/127200 [00:34<57:42:13,  1.63s/it]  0% 11/127200 [00:34<44:42:13,  1.27s/it]  0% 12/127200 [00:35<35:26:02,  1.00s/it]  0% 13/127200 [00:35<28:56:02,  1.22it/s]  0% 14/127200 [00:36<25:18:13,  1.40it/s]  0% 15/127200 [00:36<21:47:02,  1.62it/s]  0% 16/127200 [00:36<19:04:26,  1.85it/s]  0% 17/127200 [00:37<17:26:39,  2.03it/s]  0% 18/127200 [00:37<15:39:44,  2.26it/s]  0% 19/127200 [00:37<14:01:32,  2.52it/s]  0% 20/127200 [00:38<12:49:27,  2.75it/s]  0% 21/127200 [00:38<12:08:17,  2.91it/s]  0% 22/127200 [00:38<11:16:34,  3.13it/s]  0% 23/127200 [00:39<10:44:26,  3.29it/s]  0% 24/127200 [00:39<10:49:49,  3.26it/s]  0% 25/127200 [00:39<10:49:31,  3.26it/s]  0% 26/127200 [00:39<10:47:27,  3.27it/s]  0% 27/127200 [00:40<11:46:00,  3.00it/s]  0% 28/127200 [00:40<11:27:27,  3.08it/s]  0% 29/127200 [00:40<11:19:09,  3.12it/s]  0% 30/127200 [00:41<11:21:54,  3.11it/s]  0% 31/127200 [00:41<11:29:59,  3.07it/s]  0% 32/127200 [00:41<10:42:29,  3.30it/s]  0% 33/127200 [00:42<11:05:41,  3.18it/s]  0% 34/127200 [00:42<11:56:34,  2.96it/s]  0% 35/127200 [00:42<12:33:26,  2.81it/s]  0% 36/127200 [00:43<13:09:04,  2.69it/s]  0% 37/127200 [00:43<13:34:08,  2.60it/s]  0% 38/127200 [00:44<13:57:05,  2.53it/s]  0% 39/127200 [00:44<13:36:38,  2.60it/s]  0% 40/127200 [00:44<12:17:46,  2.87it/s]  0% 41/127200 [00:45<11:53:56,  2.97it/s]  0% 42/127200 [00:45<12:21:35,  2.86it/s]  0% 43/127200 [00:45<11:57:28,  2.95it/s]  0% 44/127200 [00:46<11:50:43,  2.98it/s]  0% 45/127200 [00:46<12:26:26,  2.84it/s]  0% 46/127200 [00:46<12:05:22,  2.92it/s]  0% 47/127200 [00:47<11:14:49,  3.14it/s]  0% 48/127200 [00:47<10:49:31,  3.26it/s]  0% 49/127200 [00:47<10:46:22,  3.28it/s]  0% 50/127200 [00:47<10:05:42,  3.50it/s]  0% 51/127200 [00:48<10:41:47,  3.30it/s]  0% 52/127200 [00:48<10:12:31,  3.46it/s]  0% 53/127200 [00:48<9:49:35,  3.59it/s]   0% 54/127200 [00:49<9:55:31,  3.56it/s]  0% 55/127200 [00:49<10:07:45,  3.49it/s]  0% 56/127200 [00:49<11:01:14,  3.20it/s]  0% 57/127200 [00:50<11:29:17,  3.07it/s]  0% 58/127200 [00:50<11:47:51,  2.99it/s]  0% 59/127200 [00:50<12:20:12,  2.86it/s]  0% 60/127200 [00:51<12:02:55,  2.93it/s]  0% 61/127200 [00:51<11:33:31,  3.06it/s]  0% 62/127200 [00:51<11:34:12,  3.05it/s]  0% 63/127200 [00:52<11:46:56,  3.00it/s]  0% 64/127200 [00:52<11:59:34,  2.94it/s]  0% 65/127200 [00:52<12:06:03,  2.92it/s]  0% 66/127200 [00:53<12:12:40,  2.89it/s]  0% 67/127200 [00:53<12:33:52,  2.81it/s]  0% 68/127200 [00:54<13:26:15,  2.63it/s]  0% 69/127200 [00:54<14:24:37,  2.45it/s]  0% 70/127200 [00:54<14:38:57,  2.41it/s]  0% 71/127200 [00:55<14:36:04,  2.42it/s]  0% 72/127200 [00:55<13:37:35,  2.59it/s]  0% 73/127200 [00:56<13:40:50,  2.58it/s]  0% 74/127200 [00:56<13:43:42,  2.57it/s]  0% 75/127200 [00:56<12:44:11,  2.77it/s]  0% 76/127200 [00:57<11:54:31,  2.97it/s]  0% 77/127200 [00:57<11:14:33,  3.14it/s]  0% 78/127200 [00:57<10:09:42,  3.47it/s]  0% 79/127200 [00:57<10:27:36,  3.38it/s]  0% 80/127200 [00:58<11:33:47,  3.05it/s]  0% 81/127200 [00:58<11:58:39,  2.95it/s]  0% 82/127200 [00:59<12:46:24,  2.76it/s]  0% 83/127200 [00:59<13:12:34,  2.67it/s]  0% 84/127200 [00:59<12:25:20,  2.84it/s]  0% 85/127200 [01:00<11:35:52,  3.04it/s]  0% 86/127200 [01:00<12:01:08,  2.94it/s]  0% 87/127200 [01:00<12:40:55,  2.78it/s]  0% 88/127200 [01:01<13:40:59,  2.58it/s]  0% 89/127200 [01:01<14:09:07,  2.49it/s]  0% 90/127200 [01:02<14:07:45,  2.50it/s]  0% 91/127200 [01:02<14:48:27,  2.38it/s]  0% 92/127200 [01:02<14:41:33,  2.40it/s]  0% 93/127200 [01:03<14:48:05,  2.39it/s]  0% 94/127200 [01:03<14:27:36,  2.44it/s]  0% 95/127200 [01:04<13:11:01,  2.68it/s]  0% 96/127200 [01:04<12:39:39,  2.79it/s]  0% 97/127200 [01:04<11:59:32,  2.94it/s]  0% 98/127200 [01:04<11:22:51,  3.10it/s]  0% 99/127200 [01:05<10:53:17,  3.24it/s]  0% 100/127200 [01:05<10:15:57,  3.44it/s]  0% 101/127200 [01:05<10:23:02,  3.40it/s]  0% 102/127200 [01:06<10:01:51,  3.52it/s]  0% 103/127200 [01:06<9:50:55,  3.58it/s]   0% 104/127200 [01:06<10:31:19,  3.36it/s]  0% 105/127200 [01:07<11:11:16,  3.16it/s]  0% 106/127200 [01:07<11:56:56,  2.95it/s]  0% 107/127200 [01:07<12:15:06,  2.88it/s]  0% 108/127200 [01:08<12:32:11,  2.82it/s]  0% 109/127200 [01:08<12:46:26,  2.76it/s]  0% 110/127200 [01:08<11:45:34,  3.00it/s]  0% 111/127200 [01:09<11:36:58,  3.04it/s]  0% 112/127200 [01:09<11:12:26,  3.15it/s]  0% 113/127200 [01:09<10:25:40,  3.39it/s]  0% 114/127200 [01:09<10:01:59,  3.52it/s]  0% 115/127200 [01:10<10:16:38,  3.43it/s]  0% 116/127200 [01:10<10:46:23,  3.28it/s]  0% 117/127200 [01:10<11:33:40,  3.05it/s]  0% 118/127200 [01:11<12:09:44,  2.90it/s]  0% 119/127200 [01:11<13:02:50,  2.71it/s]  0% 120/127200 [01:12<13:32:41,  2.61it/s]  0% 121/127200 [01:12<13:44:48,  2.57it/s]  0% 122/127200 [01:12<13:44:55,  2.57it/s]  0% 123/127200 [01:13<13:54:10,  2.54it/s]  0% 124/127200 [01:13<13:19:55,  2.65it/s]  0% 125/127200 [01:13<12:23:54,  2.85it/s]  0% 126/127200 [01:14<11:56:00,  2.96it/s]  0% 127/127200 [01:14<12:02:35,  2.93it/s]  0% 128/127200 [01:14<11:57:29,  2.95it/s]  0% 129/127200 [01:15<11:58:39,  2.95it/s]  0% 130/127200 [01:15<11:36:53,  3.04it/s]  0% 131/127200 [01:16<12:19:58,  2.86it/s]  0% 132/127200 [01:16<12:53:56,  2.74it/s]  0% 133/127200 [01:16<13:31:33,  2.61it/s]  0% 134/127200 [01:17<12:43:51,  2.77it/s]  0% 135/127200 [01:17<12:07:00,  2.91it/s]  0% 136/127200 [01:17<11:36:56,  3.04it/s]  0% 137/127200 [01:18<11:21:06,  3.11it/s]  0% 138/127200 [01:18<11:26:18,  3.09it/s]  0% 139/127200 [01:18<11:02:48,  3.20it/s]  0% 140/127200 [01:18<10:44:35,  3.29it/s]  0% 141/127200 [01:19<10:28:09,  3.37it/s]  0% 142/127200 [01:19<9:53:09,  3.57it/s]   0% 143/127200 [01:19<10:26:02,  3.38it/s]  0% 144/127200 [01:20<9:55:19,  3.56it/s]   0% 145/127200 [01:20<9:58:52,  3.54it/s]  0% 146/127200 [01:20<9:47:08,  3.61it/s]  0% 147/127200 [01:20<9:41:01,  3.64it/s]  0% 148/127200 [01:21<9:59:23,  3.53it/s]  0% 149/127200 [01:21<10:40:06,  3.31it/s]  0% 150/127200 [01:21<11:09:50,  3.16it/s]  0% 151/127200 [01:22<12:13:59,  2.88it/s]  0% 152/127200 [01:22<12:36:21,  2.80it/s]  0% 153/127200 [01:23<13:05:54,  2.69it/s]  0% 154/127200 [01:23<12:48:16,  2.76it/s]  0% 155/127200 [01:23<11:58:39,  2.95it/s]  0% 156/127200 [01:23<11:24:04,  3.10it/s]  0% 157/127200 [01:24<10:36:01,  3.33it/s]  0% 158/127200 [01:24<10:05:59,  3.49it/s]  0% 159/127200 [01:24<10:10:06,  3.47it/s]  0% 160/127200 [01:25<9:35:19,  3.68it/s]   0% 161/127200 [01:25<10:32:16,  3.35it/s]  0% 162/127200 [01:25<10:42:28,  3.30it/s]  0% 163/127200 [01:25<10:09:11,  3.48it/s]  0% 164/127200 [01:26<10:09:05,  3.48it/s]  0% 165/127200 [01:26<9:41:33,  3.64it/s]   0% 166/127200 [01:26<9:54:14,  3.56it/s]  0% 167/127200 [01:27<9:26:07,  3.74it/s]  0% 168/127200 [01:27<9:55:30,  3.56it/s]  0% 169/127200 [01:27<10:48:53,  3.26it/s]  0% 170/127200 [01:27<10:54:45,  3.23it/s]  0% 171/127200 [01:28<11:21:39,  3.11it/s]  0% 172/127200 [01:28<12:10:21,  2.90it/s]  0% 173/127200 [01:29<12:55:01,  2.73it/s]  0% 174/127200 [01:29<13:41:32,  2.58it/s]  0% 175/127200 [01:29<13:34:17,  2.60it/s]  0% 176/127200 [01:30<12:32:08,  2.81it/s]  0% 177/127200 [01:30<12:06:19,  2.91it/s]  0% 178/127200 [01:30<10:55:57,  3.23it/s]  0% 179/127200 [01:31<10:25:18,  3.39it/s]  0% 180/127200 [01:31<10:34:57,  3.33it/s]  0% 181/127200 [01:31<10:43:34,  3.29it/s]  0% 182/127200 [01:31<10:36:27,  3.33it/s]  0% 183/127200 [01:32<10:50:29,  3.25it/s]  0% 184/127200 [01:32<11:28:21,  3.08it/s]  0% 185/127200 [01:32<11:15:58,  3.13it/s]  0% 186/127200 [01:33<11:24:00,  3.09it/s]  0% 187/127200 [01:33<11:31:16,  3.06it/s]  0% 188/127200 [01:33<11:05:00,  3.18it/s]  0% 189/127200 [01:34<10:49:54,  3.26it/s]  0% 190/127200 [01:34<10:31:40,  3.35it/s]  0% 191/127200 [01:34<10:13:50,  3.45it/s]  0% 192/127200 [01:35<9:43:36,  3.63it/s]   0% 193/127200 [01:35<10:12:10,  3.46it/s]  0% 194/127200 [01:35<10:42:42,  3.29it/s]  0% 195/127200 [01:36<11:07:50,  3.17it/s]  0% 196/127200 [01:36<11:55:32,  2.96it/s]  0% 197/127200 [01:36<12:56:51,  2.72it/s]  0% 198/127200 [01:37<13:36:51,  2.59it/s]  0% 199/127200 [01:37<13:17:10,  2.66it/s]  0% 200/127200 [01:38<14:17:36,  2.47it/s]  0% 201/127200 [01:38<15:23:02,  2.29it/s]  0% 202/127200 [01:38<13:52:53,  2.54it/s]  0% 203/127200 [01:39<12:44:29,  2.77it/s]  0% 204/127200 [01:39<12:28:51,  2.83it/s]  0% 205/127200 [01:39<12:23:33,  2.85it/s]  0% 206/127200 [01:40<12:31:42,  2.82it/s]  0% 207/127200 [01:40<13:46:55,  2.56it/s]  0% 208/127200 [01:41<13:19:00,  2.65it/s]  0% 209/127200 [01:41<12:39:57,  2.79it/s]  0% 210/127200 [01:41<12:23:21,  2.85it/s]  0% 211/127200 [01:42<13:33:10,  2.60it/s]  0% 212/127200 [01:42<13:41:25,  2.58it/s]  0% 213/127200 [01:42<13:22:09,  2.64it/s]  0% 214/127200 [01:43<12:20:09,  2.86it/s]  0% 215/127200 [01:43<12:05:04,  2.92it/s]

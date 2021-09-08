@@ -1,0 +1,117 @@
+NoDevFiles
+SLURM_JOBID=6490
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Wed Sep  8 01:29:01 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 1
+Working Directory = /raid/ysharma_me/fair_lr/lff_vanilla
+working directory = /raid/ysharma_me/fair_lr/lff_vanilla
+/raid/ysharma_me/fair_lr/lff_vanilla
+iitrdgx
+Wed Sep  8 01:29:01 IST 2021
+NoDevFiles
+CONTAINER ID        IMAGE                                                             COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+bb3807502ed2        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   3 minutes ago       Up 3 minutes        6006/tcp, 8888/tcp                           6487
+5e1e8f8a0f17        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   3 minutes ago       Up 3 minutes        6006/tcp, 8888/tcp                           6486
+be1179cdfaed        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   6 minutes ago       Up 6 minutes        6006/tcp, 8888/tcp                           6485
+981bc94b1fd4        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   8 minutes ago       Up 8 minutes        6006/tcp, 8888/tcp                           6484
+70d0d455f9bb        nvcr.io/nvidia/tensorflow:21.08-tf2-py3                           "/usr/local/bin/nvid…"   7 days ago          Up 7 days           6006/tcp, 6064/tcp, 0.0.0.0:8888->8888/tcp   dgx_a
+1adf0771e8ed        mip_nerf_latest                                                   "/bin/bash"              9 days ago          Up 9 days           8000-8001/tcp                                quirky_euler
+48df6bee0198        tensorflow_hrl1:latest                                            "/bin/bash"              2 weeks ago         Up 2 weeks          0.0.0.0:8000->8000/tcp                       wonderful_feistel
+8c05108fa3d4        tensorflow/tensorflow:latest-gpu                                  "bash"                   2 weeks ago         Up 2 weeks                                                       quizzical_einstein
+76afc92cb62b        tali_cs/talift:latest                                             "/bin/bash init.sh"      2 weeks ago         Up 2 weeks                                                       talift-container
+Wed Sep  8 01:29:01 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+| N/A   50C    P0   231W / 300W |   5340MiB / 32480MiB |     68%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+| N/A   60C    P0   284W / 300W |  12034MiB / 32480MiB |    100%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+| N/A   42C    P0    74W / 300W |   4018MiB / 32480MiB |     82%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+| N/A   27C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   29C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   28C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+| N/A   31C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0     32385      C   python                                      5329MiB |
+|    1     37621      C   python                                      3989MiB |
+|    1     39947      C   python                                      3989MiB |
+|    1     40380      C   python                                      3989MiB |
+|    2     35810      C   python                                      3989MiB |
++-----------------------------------------------------------------------------+
+Error: No such container: bb3807502ed2
+Error: No such container: 5e1e8f8a0f17
+Error: No such container: be1179cdfaed
+Error: No such container: 981bc94b1fd4
+CONTAINER ID        IMAGE                                     COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+70d0d455f9bb        nvcr.io/nvidia/tensorflow:21.08-tf2-py3   "/usr/local/bin/nvid…"   7 days ago          Up 7 days           6006/tcp, 6064/tcp, 0.0.0.0:8888->8888/tcp   dgx_a
+1adf0771e8ed        mip_nerf_latest                           "/bin/bash"              9 days ago          Up 9 days           8000-8001/tcp                                quirky_euler
+48df6bee0198        tensorflow_hrl1:latest                    "/bin/bash"              2 weeks ago         Up 2 weeks          0.0.0.0:8000->8000/tcp                       wonderful_feistel
+8c05108fa3d4        tensorflow/tensorflow:latest-gpu          "bash"                   2 weeks ago         Up 2 weeks                                                       quizzical_einstein
+76afc92cb62b        tali_cs/talift:latest                     "/bin/bash init.sh"      2 weeks ago         Up 2 weeks                                                       talift-container
+Wed Sep  8 01:29:19 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+| N/A   51C    P0   206W / 300W |   5340MiB / 32480MiB |     75%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+| N/A   50C    P0    77W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+| N/A   36C    P0    48W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+| N/A   27C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   29C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   28C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+| N/A   31C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0     32385      C   python                                      5329MiB |
++-----------------------------------------------------------------------------+
